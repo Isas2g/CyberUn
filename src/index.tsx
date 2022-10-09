@@ -16,9 +16,13 @@ const router = createBrowserRouter([
     element: <Authentication />,
   },
   {
+    path: "/authnew",
+    element: <div className="">123</div>,
+  },
+  {
     path: "*",
     element: <Authentication />,
-  },
+  }
 ]);
 
 root.render(
