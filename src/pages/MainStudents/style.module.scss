@@ -1,0 +1,33 @@
+.container {
+  position: relative;
+  height: 100%;
+  min-height: 88vh;
+}
+.main-students {
+  display: flex;
+  justify-content: space-between;
+}
+.left-bar {
+  width: 200px;
+  min-height: 88vh;
+  background-color: black;
+  margin: 0 0 -15px 0; // Спросить у Рената насчет отступов App и поменять
+  border-radius: 50px 0 0 50px;
+  background: linear-gradient(158.96deg, #9C99E8 -14.94%, #D5B8DA 102.93%);
+  padding: 30px 15px 30px 15px;
+
+  &__icon {
+    max-width: 100%;
+    height: auto;
+  }
+  &__nav-item {
+    font-family: 'Lato';
+    font-weight: 700;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  &__nav-item:hover {
+    text-decoration: none;
+  }
+}

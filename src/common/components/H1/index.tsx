@@ -1,6 +1,19 @@
-export const Title = () => {
+import classes from './style.module.scss'
 
-  return <div>
-    Title
-  </div>
+// enum Colors {
+//   black='black',
+//   purple='purple'
+// }
+
+interface Props {
+  text: string,
+  // color: Colors
 }
+
+export const Title = ({text}: Props) => {
+
+  return <h1 className={classes['h1']}>
+    {text}
+  </h1> 
+}
+

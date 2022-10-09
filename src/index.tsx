@@ -4,6 +4,7 @@ import './common/style/index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Authentication } from './pages/Authentication';
+import { MainStudents } from './pages/MainStudents';
 import './common/style/App.css';
 import './common/style/index.css';
 
@@ -17,13 +18,13 @@ const router = createBrowserRouter([
     element: <Authentication />,
   },
   {
-    path: "/authnew",
-    element: <div className="">123</div>,
-  },
-  {
     path: "*",
     element: <Authentication />,
-  }
+  },
+  {
+    path: "/main",
+    element: <MainStudents />,
+  },
 ]);
 
 root.render(
