@@ -1,9 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './common/style/index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { createBrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Authentication } from './pages/Authentication';
 
 const root = ReactDOM.createRoot(
@@ -27,7 +26,7 @@ const router = createBrowserRouter([
 
 root.render(
   <React.StrictMode>
-    <App />
+     <RouterProvider router={router} />
   </React.StrictMode>
 );
 
