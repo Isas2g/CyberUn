@@ -4,6 +4,8 @@ import './common/style/index.css';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Authentication } from './pages/Authentication';
+import './common/style/App.css';
+import './common/style/index.css';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
