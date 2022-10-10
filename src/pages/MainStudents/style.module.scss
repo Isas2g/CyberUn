@@ -11,7 +11,7 @@
 .main-content {
   width: 100%;
   display: grid;
-  grid-template-columns: 45% 45%;
+  grid-template-columns: 45% 40%;
   justify-content: space-between;
   padding: 45px;
 
@@ -37,9 +37,42 @@
       text-decoration: none;
     }
   }
-  
+  &__upcoming-lessons {
+    font-weight: 500;
+    font-size: 14px;
+    color: #242424;
+    opacity: 0.61;
+    text-align: start;
+    margin: 20px 0 0 0;
+  }
+  &__lessons-line {
+    padding: 0;
+    height: 0;
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+    margin: 15px 0 15px 0;
+  }
+  &__lessons {
+    margin: 20px 0 0 0;
+  }
+  &__lesson {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    span {
+      color: #FFB118;
+      font-weight: 600;
+      font-size: 12px;
+    }
+  }
+  &__lesson:nth-child(2) {
+    color: #235291;
+  }
 }
 
 .homework {
   margin: 20px 0 0 0;
 }
+
+

@@ -4,6 +4,8 @@ import {LeftBar} from '../../common/components/LeftBar'
 import {Title as H1} from '../../common/components/H1'
 import { CourseBlock } from '../../common/components/CourseBlock'
 import { TaskBlock } from '../../common/components/TaskBlock'
+import { Calendar } from '../../common/components/Calendar'
+import { Communication } from './components/Communication';
 
 
 export const MainStudents = () => {
@@ -31,6 +33,22 @@ export const MainStudents = () => {
 
       <div className={classes['main-content__block']}>
         <H1 text='Расписание' />
+        <Calendar />
+        <p className={classes['main-content__upcoming-lessons']}>Ближайшие занаятия:</p>
+        <div className={classes['main-content__lessons']}>
+          <p className={classes['main-content__lesson']}>
+            <span>5 августа 2022</span>
+            <span>Название урока</span>
+          </p>
+
+          <hr className={classes['main-content__lessons-line']} />
+
+          <p className={classes['main-content__lesson']}>
+            <span>5 августа 2022</span>
+            <span>Название урока</span>
+          </p>
+        </div>
+        <Communication />
       </div>
     </div>
   </div>

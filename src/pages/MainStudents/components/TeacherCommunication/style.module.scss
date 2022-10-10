@@ -1,0 +1,34 @@
+.communication {
+  &__teacher {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0 0 0;
+
+    &-image {
+      border-radius: 50%;
+      height: auto;
+      max-width: 15%;
+      flex-basis: 15%;
+
+    }
+    &-text {
+      text-align: start;
+      flex-basis: 65%;
+    }
+    &-chat {
+      flex-basis: 10%;
+    }
+    &-name {
+      font-weight: 600;
+      font-size: 12px;
+      color: #000000;
+    }
+    &-direction {
+      font-weight: 600;
+      font-size: 10px;
+      color: #FFB118;
+      margin: 10px 0 0 0;
+    }
+  }
+  }

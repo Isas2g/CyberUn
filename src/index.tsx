@@ -5,6 +5,7 @@ import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import { Authentication } from './pages/Authentication';
 import { MainStudents } from './pages/MainStudents';
+import { Courses } from './pages/Courses';
 import './common/style/App.css';
 import './common/style/index.css';
 
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
   {
     path: "/main",
     element: <MainStudents />,
+  },
+  {
+    path: "/courses",
+    element: <Courses />,
   },
 ]);
 
