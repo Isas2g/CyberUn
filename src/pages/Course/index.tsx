@@ -3,9 +3,14 @@ import classes from './style.module.scss'
 import {LeftBar} from '../../common/components/LeftBar'
 import {Title as H1} from '../../common/components/H1'
 import {Title as H2} from '../../common/components/H2'
+import {Title as H3} from '../../common/components/H3'
 import {Title as H4} from '../../common/components/H4'
+import { AdditionalMaterials } from './components/AdditionalMaterials'
 
 import icon from '../../common/assets/icons/additional-icon.svg'
+import attachFile from '../../common/assets/icons/attach-file.svg'
+import sendFile from '../../common/assets/icons/send-file.svg'
+import chatPerson from '../../common/assets/img/chat-person.png'
 
 export const Course = () => {
   return <div className={classes['container'] + ' ' + classes['course']}>
@@ -31,50 +36,11 @@ export const Course = () => {
         />
       </div>
 
-      <div className={classes['course__additional-materials'] + ' ' + classes['additional-materials']}>
-        <H1 text='Дополнительные материалы:' />
-
-        <ul className={classes['additional-materials__list']}>
-          <li className={classes['additional-materials__item']}>
-            <div className={classes['additional-materials__image-block']}>
-              <img src={icon} alt="" />
-              <p className={classes['additional-materials__name']}>Схема №1</p>
-            </div>
-            <a href="/" className={classes['additional-materials__download']}>Скачать</a>
-          </li>
-          <li className={classes['additional-materials__item']}>
-            <div className={classes['additional-materials__image-block']}>
-              <img src={icon} alt="" />
-              <p className={classes['additional-materials__name']}>Схема №1</p>
-            </div>
-            <a href="/" className={classes['additional-materials__download']}>Скачать</a>
-          </li>
-          <li className={classes['additional-materials__item']}>
-            <div className={classes['additional-materials__image-block']}>
-              <img src={icon} alt="" />
-              <p className={classes['additional-materials__name']}>Схема №1</p>
-            </div>
-            <a href="/" className={classes['additional-materials__download']}>Скачать</a>
-          </li>
-          <li className={classes['additional-materials__item']}>
-            <div className={classes['additional-materials__image-block']}>
-              <img src={icon} alt="" />
-              <p className={classes['additional-materials__name']}>Схема №1</p>
-            </div>
-            <a href="/" className={classes['additional-materials__download']}>Скачать</a>
-          </li>
-          <li className={classes['additional-materials__item']}>
-            <div className={classes['additional-materials__image-block']}>
-              <img src={icon} alt="" />
-              <p className={classes['additional-materials__name']}>Схема №1</p>
-            </div>
-            <a href="/" className={classes['additional-materials__download']}>Скачать</a>
-          </li>
-        </ul>
-      </div>
+      <AdditionalMaterials />
 
       <div className={classes['course__homework'] + ' ' + classes['homework']}>
         <H1 text='Домашее задание:' styles={{ margin: '20px 0 0 0' }} />
+
         <H4 
           text='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam fringilla orci vel mauris laoreet pharetra. 
           Sed placerat dignissim tellus, sed commodo metus aliquet quis. Curabitur et laoreet lacus. 
@@ -86,6 +52,32 @@ export const Course = () => {
           color='black'
           styles={{ fontSize: '10', fontWeight: '600', margin: '5px 0 0 0' }}
         />
+
+        <H3 text='Выполнить до 31.08.2022, 12:00' color='yellow' styles={{ margin: '10px 0 0 0' }} />
+
+        <div className={classes['homework__input-block']}>
+          <input className={classes['homework__input']} type="text" placeholder='Введите сообщение или ответ на задание' />
+          <div className={classes['homework__input-functions']}>
+            <img className={classes['homework__attach-file']} src={attachFile} alt="" />
+            <img className={classes['homework__send-file']} src={sendFile} alt="" />
+          </div>
+        </div>
+
+        <div className={classes['homework__history'] + ' ' + classes['history']}>
+          <H3 text='История сообщений' color='black' />
+          <div className={classes['history__messenges'] + ' ' + classes['messenges']}>
+            <div className={classes['messenges__messenge'] + ' ' + classes['messenge']}>
+              <img className={classes['messenge__icon']} src={chatPerson} alt="" />
+              <div className={classes['messenge__person-info']}>
+                <H4 text='Владимир' color='yellow' />
+                <div className={classes['messenge__person-text']}>
+                  <H4 text=' Sed quis mauris ac mauris tincidunt porttitor. Aliquam quam risus, auctor eleifend dui sollicitudin, tempor consequat.' color='black' />
+                  <a href="/" className={classes['messenge__person-file']}>Вложен файл.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>

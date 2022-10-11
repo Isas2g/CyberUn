@@ -33,36 +33,62 @@
   }
 }
 
-.additional-materials {
-  margin: 30px 0 0 0;
-
-  &__image-block {
-    background: linear-gradient(80.75deg, #FFA800 -1.74%, #FFB118 92.47%);
-    padding: 30px 25px;
-    border-radius: 20px;
-  }
-  &__list {
-    list-style: none;
+.homework {
+  &__input-block {
+    background-color: #F2F2F2;
+    margin: 10px 0 0 0;
+    padding: 15px 20px;
+    border-radius: 100px;
     display: flex;
     align-items: center;
-    margin: 20px 0 0 0;
+    justify-content: space-between;
   }
-  &__item {
-    &:not(:first-of-type) {
-      margin: 0 0 0 15px;
+  &__input {
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    &:focus {
+      background: none;
+      border: none;
     }
   }
-  &__name {
-    font-weight: 400;
-    font-size: 10px;
-    color: #FFFFFF;
-    margin: 10px 0 0 0;
+  &__input-functions {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 20px;
   }
-  &__download {
-    margin: 10px 0 0 0;
-    font-weight: 600;
+  &__attach-file {
+    cursor: pointer;
+  }
+  &__send-file {
+    cursor: pointer;
+    margin: 0 0 0 20px;
+  }
+
+  &__history {
+    margin: 20px 0 0 0;
+  }
+}
+
+.messenge {
+  display: flex;
+  margin: 15px 0 0 0;
+
+  &__person-info {
+    margin: 0 0 0 15px;
+  }
+
+  &__person-text {
+    display: flex;
+    align-items: center;
+  }
+  
+  &__person-file {
+    text-decoration: underline;
+    font-weight: 300;
     font-size: 10px;
-    text-decoration-line: underline;
-    color: #000000;
+    color: #959595;
+    margin: 0 0 0 5px;
   }
 }
