@@ -8,6 +8,7 @@ import { MainStudents } from './pages/MainStudents';
 import { Courses } from './pages/Courses';
 import { Modules } from './pages/Modules';
 import { Lessons } from './pages/Lessons';
+import { Calendar } from './pages/Calendar';
 import './common/style/App.css';
 import './common/style/index.css';
 
@@ -39,6 +40,10 @@ const router = createBrowserRouter([
   {
     path: "/lessons",
     element: <Lessons />,
+  },
+  {
+    path: "/calendar",
+    element: <Calendar />,
   },
 ]);
 
