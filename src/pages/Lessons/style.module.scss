@@ -4,29 +4,15 @@
   min-height: 88vh;
 }
 
-.modules {
+.lessons {
   display: flex;
   justify-content: space-between;
 
   &__body {
     width: 70%;
     margin: 55px auto 30px auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    a {
-      text-align: start;
-      font-weight: 700;
-      font-size: 24px;
-      color: #2F2F2F;
-    }
   }
 
-  &__inner {
-    margin: 0 0 20px 0;
-  }
-  
   &__course-title {
     display: flex;
     justify-content: space-between;
@@ -46,18 +32,30 @@
       margin: 0 0 0 10px;
     }
   }
+  &__description {
+    text-align: start;
+    font-weight: 600;
+    font-size: 10px;
+    color: #000000;
+    line-height: 19px;
+    margin: 15px 0 0 0;
+
+    &-list {
+      margin: 0 0 0 15px;
+    }
+  }
 }
 
-.near-modules {
+.near-lessons {
   display: grid;
   grid-template-columns: 48% 48%;
   justify-content: space-between;
   margin: 25px 0 0 0;
 }
 
-.passed-modules {
+.passed-lessons {
   margin: 20px 0 0 0;
-  &__modules {
+  &__lessons {
     display: grid;
     grid-template-columns: 48% 48%;
     justify-content: space-between;
