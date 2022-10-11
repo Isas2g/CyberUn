@@ -3,7 +3,6 @@ import classes from './style.module.scss'
 import {LeftBar} from '../../common/components/LeftBar'
 import {Title as H1} from '../../common/components/H1'
 import {Title as H2} from '../../common/components/H2'
-// import { CourseBlock } from '../../common/components/CourseBlock'
 
 import plus from '../../common/assets/icons/plus-light.svg'
 

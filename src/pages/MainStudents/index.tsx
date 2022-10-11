@@ -7,6 +7,8 @@ import { TaskBlock } from '../../common/components/TaskBlock'
 import { Calendar } from '../../common/components/Calendar'
 import { Communication } from './components/Communication';
 
+import taskIcon from '../../common/assets/icons/task-icon.svg'
+
 
 export const MainStudents = () => {
 
@@ -16,18 +18,42 @@ export const MainStudents = () => {
 
     <div className={classes['main-students__main-content'] + ' ' + classes['main-content']}>
       <div className={classes['main-content__block']}>
-        <H1 text='Привет, Владимир!' />
+        <H1 text='Привет, Владимир!' color='purple' />
         <div className={classes['main-content__courses']}>
           <H1 text='Мои курсы'/>
-          <CourseBlock title='Программирование на Python, создание игр и простых приложений' subtitle='Модуль 5, урок 5: навание урока' />
-          <CourseBlock title='Олимпиадная математика' subtitle='Модуль 5, урок 5: навание урока'/>
+          <CourseBlock
+            title='Программирование на Python, создание игр и простых приложений' 
+            subtitle='Модуль 5, урок 5: навание урока'
+            styles={{
+              margin: '20px 0 0 0'
+            }}
+          />
+          <CourseBlock 
+            title='Олимпиадная математика' 
+            subtitle='Модуль 5, урок 5: навание урока' 
+            styles={{
+              background: 'linear-gradient(273.48deg, #479CA3 -26.77%, #235291 97.74%)',
+              margin: '15px 0 0 0'
+            }}
+          />
           {/* Не работают классы на тег "a" */}
-          <a className={classes['test']} href='/'>Посмотреть пройденные курсы &#62;</a>
+          <a href='/' className={classes['main-content__courses-all']}>Посмотреть пройденные курсы &#62;</a>
         </div>
 
         <div className={classes['main-content__homework'] + ' ' + classes['homework']}>
           <H1 text='Домашние задания:' />
-          <TaskBlock title='Очень длинный текст домашнего задания' subtitles={['Программирование', 'Код', '25 августа']} />
+          <TaskBlock 
+            title='Очень длинный текст домашнего задания' 
+            subtitles={['Программирование', 'Код', '25 августа']} 
+            icon={taskIcon}
+            styles={{background: 'linear-gradient(80.75deg, #FFA800 -1.74%, #FFB118 92.47%)'}}
+          />
+          <TaskBlock 
+            title='Очень длинный текст домашнего задания' 
+            subtitles={['Программирование', 'Код', '25 августа']}
+            icon={taskIcon}
+            styles={{background: 'linear-gradient(0deg, #6E14AC, #6E14AC)'}}
+          />
         </div>
       </div>
 

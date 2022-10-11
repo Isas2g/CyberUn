@@ -17,7 +17,7 @@ export const Lessons = () => {
       </div>
 
       <div className={classes['lessons__course-name']}>
-        <H1 text='ЕГЭ: Физика' />
+        <H1 text='ЕГЭ: Физика' color='red' />
         <div className={classes['lessons__course-stars']}>
           <img src={redStar} alt="" />
           <img src={redStar} alt="" />
@@ -47,23 +47,81 @@ export const Lessons = () => {
       <div className={classes['lessons__near-lessons'] + ' ' + classes['near-lessons']}>
         <div className={classes['near-lessons__current']}>
           <H1 text='Текущий урок' />
-          <CourseBlock title='Урок 10:' subtitle='Молекулярно кинетическая теория газов (МКТ)' />
+          <CourseBlock 
+            title='Урок 10:' 
+            subtitle='Молекулярно кинетическая теория газов (МКТ)' 
+            date='20 агуста 2022, 14:00'
+            styles={{
+              background: 'linear-gradient(273.48deg, #EE5D5D -26.77%, #FE6356 97.74%)',
+              margin: '10px 0 0 0'
+            }}
+          />
         </div>
         <div className={classes['near-lessons__next']}>
           <H1 text='Следующий урок' />
-          <CourseBlock title='Урок 10:' subtitle='Ядерная, атомная, квантовая физика.' />
+          <CourseBlock 
+            title='Урок 10:' 
+            subtitle='Ядерная, атомная, квантовая физика.' 
+            date='20 агуста 2022, 14:00'
+            styles={{
+              background: 'linear-gradient(273.48deg, #EE5D5D -26.77%, #FE6356 97.74%)',
+              margin: '10px 0 0 0'
+            }}
+          />
         </div>
       </div>
 
       <div className={classes['modules__passed-lessons'] + ' ' + classes['passed-lessons']}>
         <H1 text='Пройденные уроки' />
         <div className={classes['passed-lessons__lessons']}>
-          <CourseBlock title='Урок 10:' subtitle='Название урока' />
-          <CourseBlock title='Урок 10:' subtitle='Название урока' />
-          <CourseBlock title='Урок 10:' subtitle='Название урока' />
-          <CourseBlock title='Урок 10:' subtitle='Название урока' />
-          <CourseBlock title='Урок 10:' subtitle='Название урока' />
-          <CourseBlock title='Урок 10:' subtitle='Название урока' />
+          <CourseBlock 
+            title='Урок 10:' 
+            subtitle='Название урока' 
+            styles={{
+              background: '#faafac',
+              margin: '10px 0 0 0'
+            }}
+          />
+          <CourseBlock 
+            title='Урок 10:' 
+            subtitle='Название урока' 
+            styles={{
+              background: '#faafac',
+              margin: '10px 0 0 0'
+            }}
+          />
+          <CourseBlock 
+            title='Урок 10:' 
+            subtitle='Название урока' 
+            styles={{
+              background: '#faafac',
+              margin: '10px 0 0 0'
+            }}
+          />
+          <CourseBlock 
+            title='Урок 10:' 
+            subtitle='Название урока' 
+            styles={{
+              background: '#faafac',
+              margin: '10px 0 0 0'
+            }}
+          />
+          <CourseBlock 
+            title='Урок 10:' 
+            subtitle='Название урока' 
+            styles={{
+              background: '#faafac',
+              margin: '10px 0 0 0'
+            }}
+          />
+          <CourseBlock 
+            title='Урок 10:' 
+            subtitle='Название урока' 
+            styles={{
+              background: '#faafac',
+              margin: '10px 0 0 0'
+            }}
+          />
         </div>
       </div>
     </div>

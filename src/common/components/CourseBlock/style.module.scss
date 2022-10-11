@@ -7,16 +7,17 @@
   align-items: center;
   justify-content: space-between;
 
+  &__date {
+    font-weight: 700;
+    font-size: 10px;
+    color: #FFFFFF;
+    margin: 5px 0 0 0;
+    text-align: start;
+  }
   &__text {
     flex-basis: 85%;
   }
   &__arrow {
     opacity: 1;
-  }
-  &:not(:first-of-type) {
-    margin: 15px 0 0 0;
-  }
-  &:first-of-type {
-    margin: 25px 0 0 0;
   }
 }

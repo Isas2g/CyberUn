@@ -10,14 +10,15 @@ import rightArrowDark from '../../assets/icons/right-arrow-dark.svg'
 
 interface Props {
   title: string,
-  subtitles: Array<string>
+  subtitles: Array<string>,
+  icon: string,
+  styles?: Object,
 }
 
-export const TaskBlock = ({title, subtitles}: Props) => {
-  console.log(subtitles)
+export const TaskBlock = ({title, subtitles, icon, styles}: Props) => {
   return <div className={classes['homework__task'] + ' ' + classes['task']}>
-    <div className={classes['task__icon']}>
-      <img src={taskIcon} alt="" />
+    <div style={styles} className={classes['task__icon']}>
+      <img src={icon} alt="" />
     </div>
     <div className={classes['task__text']}>
       <p className={classes['task__title']}>{title}</p>

@@ -5,15 +5,28 @@ import classes from './style.module.scss'
 //   purple='purple'
 // }
 
+type Colors = 'black' | 'yellow'
+
 interface Props {
   text: string,
-  // color: Colors
+  styles?: Object
+  color?: Colors
 }
 
-export const Title = ({text}: Props) => {
-
-  return <h3 className={classes['h3']}>
-    {text}
-  </h3> 
+export const Title = ({text, styles, color}: Props) => {
+  if (color === 'yellow') {
+    const style = {
+      color: '#FFB118',
+      ...styles
+    }
+    return <h3 style={style} className={classes['h3']}>
+      {text}
+    </h3> 
+  } else {
+    return <h3 style={styles} className={classes['h3']}>
+      {text}
+    </h3> 
+  }
+  
 }
 

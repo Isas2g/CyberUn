@@ -7,12 +7,13 @@ import classes from './style.module.scss'
 
 interface Props {
   text: string,
+  styles?: Object
   // color: Colors
 }
 
-export const Title = ({text}: Props) => {
+export const Title = ({text, styles}: Props) => {
 
-  return <h4 className={classes['h4']}>
+  return <h4 style={styles} className={classes['h4']}>
     {text}
   </h4> 
 }

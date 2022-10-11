@@ -10,6 +10,8 @@ import { Modules } from './pages/Modules';
 import { Lessons } from './pages/Lessons';
 import { Calendar } from './pages/Calendar';
 import { Achievements } from './pages/Achievements';
+import { Testing } from './pages/Testing';
+import { TestingResults } from './pages/TestingResults';
 import './common/style/App.css';
 import './common/style/index.css';
 
@@ -49,6 +51,14 @@ const router = createBrowserRouter([
   {
     path: "/achievements",
     element: <Achievements />,
+  },
+  {
+    path: "/testing",
+    element: <Testing />,
+  },
+  {
+    path: "/testing-results",
+    element: <TestingResults />,
   },
 ]);
 

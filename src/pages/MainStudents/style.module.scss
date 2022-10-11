@@ -7,6 +7,9 @@
   display: flex;
   justify-content: space-between;
 }
+.test {
+  color: #fff;
+}
 
 .main-content {
   width: 100%;
@@ -17,8 +20,8 @@
 
   &__courses {
     margin: 40px 0 0 0;
-
-    a {
+    
+    &-all {
       font-weight: 500;
       font-size: 14px;
       color: #000000;

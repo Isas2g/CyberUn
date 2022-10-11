@@ -8,6 +8,10 @@
   display: flex;
   justify-content: space-between;
 
+  &__courses-block {
+    margin: 10px 0 0 0;
+  }
+
   &__body {
     width: 70%;
     margin: 55px auto 30px auto;
