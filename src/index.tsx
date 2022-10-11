@@ -9,6 +9,7 @@ import { Courses } from './pages/Courses';
 import { Modules } from './pages/Modules';
 import { Lessons } from './pages/Lessons';
 import { Calendar } from './pages/Calendar';
+import { Achievements } from './pages/Achievements';
 import './common/style/App.css';
 import './common/style/index.css';
 
@@ -44,6 +45,10 @@ const router = createBrowserRouter([
   {
     path: "/calendar",
     element: <Calendar />,
+  },
+  {
+    path: "/achievements",
+    element: <Achievements />,
   },
 ]);
 
