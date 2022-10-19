@@ -36,7 +36,6 @@ export const MainStudents = () => {
               margin: '15px 0 0 0'
             }}
           />
-          {/* Не работают классы на тег "a" */}
           <a href='/' className={classes['main-content__courses-all']}>Посмотреть пройденные курсы &#62;</a>
         </div>
 
