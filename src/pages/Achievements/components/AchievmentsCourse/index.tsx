@@ -16,9 +16,9 @@ export const AchievmentsCourse = ({ images, title, colorTitle }: Props) => {
     <H2 text={title} color='purple' />
     <ul className={classes['achievements__list']}>
       {
-        images.map(image => {
+        images.map((image, index) => {
           return (
-            <li className={classes['achievements__item']}>
+            <li key={index} className={classes['achievements__item']}>
               <img src={image} alt="" />
             </li>
           )

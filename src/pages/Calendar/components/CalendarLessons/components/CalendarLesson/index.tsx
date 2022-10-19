@@ -8,8 +8,8 @@ interface Props {
 export const CalendarLesson = ({ paragraphs, styles }: Props) => {
   return <li style={styles} className={classes['calendar__lesson']}>
     {
-      paragraphs.map(paragraph => {
-        return <p>{paragraph}</p>
+      paragraphs.map((paragraph, index) => {
+        return <p key={index}>{paragraph}</p>
       })
     }
   </li>
