@@ -4,13 +4,7 @@ import { Title as H1 } from '../../../../common/components/H1'
 
 import icon from '../../../../common/assets/icons/additional-icon.svg'
 
-type Type = 'video'
-
-interface Props {
-  type?: Type
-}
-
-export const AdditionalMaterials = ({type}: Props) => {
+export const AdditionalMaterials = () => {
   return <div className={classes['course__additional-materials'] + ' ' + classes['additional-materials']}>
   <H1 text='Дополнительные материалы:' />
 

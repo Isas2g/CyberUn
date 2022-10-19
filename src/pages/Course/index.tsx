@@ -6,6 +6,7 @@ import {Title as H2} from '../../common/components/H2'
 import {Title as H3} from '../../common/components/H3'
 import {Title as H4} from '../../common/components/H4'
 import { AdditionalMaterials } from './components/AdditionalMaterials'
+import { AdditionalMaterialsVideo } from './components/AdditionalMaterialsVideo'
 
 import icon from '../../common/assets/icons/additional-icon.svg'
 import attachFile from '../../common/assets/icons/attach-file.svg'
@@ -13,6 +14,9 @@ import sendFile from '../../common/assets/icons/send-file.svg'
 import chatPerson from '../../common/assets/img/chat-person.png'
 
 export const Course = () => {
+
+  const type = 'video'
+
   return <div className={classes['container'] + ' ' + classes['course']}>
     <LeftBar />
 
@@ -36,7 +40,8 @@ export const Course = () => {
         />
       </div>
 
-      <AdditionalMaterials />
+      {type === 'video' ? <AdditionalMaterialsVideo /> : <AdditionalMaterials />}
+      
 
       <div className={classes['course__homework'] + ' ' + classes['homework']}>
         <H1 text='Домашее задание:' styles={{ margin: '20px 0 0 0' }} />
@@ -66,8 +71,10 @@ export const Course = () => {
         <div className={classes['homework__history'] + ' ' + classes['history']}>
           <H3 text='История сообщений' color='black' />
           <div className={classes['history__messenges'] + ' ' + classes['messenges']}>
+
             <div className={classes['messenges__messenge'] + ' ' + classes['messenge']}>
               <img className={classes['messenge__icon']} src={chatPerson} alt="" />
+
               <div className={classes['messenge__person-info']}>
                 <H4 text='Владимир' color='yellow' />
                 <div className={classes['messenge__person-text']}>
@@ -75,7 +82,21 @@ export const Course = () => {
                   <a href="/" className={classes['messenge__person-file']}>Вложен файл.</a>
                 </div>
               </div>
+
             </div>
+
+            <div className={classes['messenges__messenge'] + ' ' + classes['messenge'] + ' ' + classes['messenge--answer']}>
+              <img className={classes['messenge__icon']} src={chatPerson} alt="" />
+
+              <div className={classes['messenge__person-info']}>
+                <H4 text='Владимир' color='purple' styles={{ textAlign: 'end' }} />
+                <div className={classes['messenge__person-text']}>
+                  <H4 styles={{ textAlign: 'end' }} text=' Sed quis mauris ac mauris tincidunt porttitor. Aliquam quam risus, auctor eleifend dui sollicitudin, tempor consequat.' color='black' />
+                </div>
+              </div>
+              
+            </div>
+
           </div>
         </div>
       </div>

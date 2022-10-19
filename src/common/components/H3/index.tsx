@@ -1,15 +1,10 @@
 import classes from './style.module.scss'
 
-// enum Colors {
-//   black='black',
-//   purple='purple'
-// }
-
 type Colors = 'black' | 'yellow' | 'black'
 
 interface Props {
   text: string,
-  styles?: Object
+  styles?: object,
   color?: Colors
 }
 

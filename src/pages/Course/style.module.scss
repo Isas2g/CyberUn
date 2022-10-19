@@ -17,6 +17,11 @@
     position: absolute;
     top: 0;
     right: 0;
+
+    font-weight: 700;
+    font-size: 14px;
+    color: #888888;
+
     &:hover {
       text-decoration: none;
     }
@@ -90,5 +95,17 @@
     font-size: 10px;
     color: #959595;
     margin: 0 0 0 5px;
+  }
+
+  &--answer {
+    justify-content: flex-end;
+
+    .messenge__icon {
+      order: 3;
+    }
+    .messenge__person-info {
+      order: 1;
+      margin: 0 15px 0 0;
+    }
   }
 }
