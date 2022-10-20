@@ -17,6 +17,7 @@ body {
   padding: 50px 100px;
   font-family: 'Montserrat';
   color: #455360;
+  cursor: url(../assets/img/cursor.svg), auto;
 }
 
 input, button, select {
