@@ -14,6 +14,12 @@ import { TestingResults } from './pages/TestingResults';
 import { Course } from './pages/Course';
 import './common/style/App.css';
 import './common/style/index.css';
+import { AdminTeachers } from './pages/Admin/Teachers';
+import { AdminGroups } from './pages/Admin/Groups';
+import { AdminCalendar } from './pages/Admin/Calendar';
+import { AdminStudents } from './pages/Admin/Students';
+import { AdminTeacherProfile } from './pages/Admin/TeacherProfile';
+import { AdminStudentProfile } from './pages/Admin/StudentProfile';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -64,6 +70,35 @@ const router = createBrowserRouter([
     path: "/course",
     element: <Course />,
   },
+  {
+    path: '/admin',
+    children: [
+      {
+        path: '/admin/teachers',
+        element: <AdminTeachers />
+      },
+      {
+        path: '/admin/groups',
+        element: <AdminGroups />
+      },
+      {
+        path: '/admin/calendar',
+        element: <AdminCalendar />
+      },
+      {
+        path: '/admin/students',
+        element: <AdminStudents />
+      },
+      {
+        path: '/admin/teachers/profile',
+        element: <AdminTeacherProfile />
+      },
+      {
+        path: '/admin/students/profile',
+        element: <AdminStudentProfile />
+      },
+    ]
+  }
 ]);
 
 root.render(

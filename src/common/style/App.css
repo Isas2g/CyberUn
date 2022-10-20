@@ -2,8 +2,10 @@
   text-align: center;
   background-color: #fff;
   border-radius: 50px;
-  min-height: 88vh; /* TODO: Временная мера */
+  height: 88vh; /* TODO: Временная мера */
   padding-bottom: 15px;
+  overflow-y: scroll;
+  padding-bottom: 30px;
 }
 
 .App-logo {

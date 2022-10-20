@@ -5,22 +5,26 @@ import classes from './style.module.scss'
 //   purple='purple'
 // }
 
-type Colors = 'black' | 'yellow' | 'black'
+type Colors = 'black' | 'yellow' | 'black' | 'purple'
 
 interface Props {
-  text: string,
+  text?: string,
   styles?: Object
   color?: Colors
+  children?: JSX.Element
+  | JSX.Element[]
+  | string
+  | string[];
 }
 
-export const Title = ({text, styles, color}: Props) => {
+export const Title = ({text, styles, color, children}: Props) => {
   if (color === 'yellow') {
     const style = {
       color: '#FFB118',
       ...styles
     }
     return <h3 style={style} className={classes['h3']}>
-      {text}
+      {children || text}
     </h3> 
   } else if (color === 'black') {
     const style = {
@@ -28,11 +32,20 @@ export const Title = ({text, styles, color}: Props) => {
       ...styles
     }
     return <h3 style={style} className={classes['h3']}>
-      {text}
+      {children || text}
     </h3> 
-  } else {
+  } else if (color === 'purple') {
+    const style = {
+      color: '#A68DCC',
+      ...styles
+    }
+    return <h3 style={style} className={classes['h3']}>
+      {children || text}
+    </h3> 
+  }  
+  else {
     return <h3 style={styles} className={classes['h3']}>
-      {text}
+      {children || text}
     </h3> 
   }
   
