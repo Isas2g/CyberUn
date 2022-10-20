@@ -1,3 +1,15 @@
+@import "../../common/style/breakpoints.scss";
+
+.container {
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 50px;
+  height: 88vh;
+  padding-bottom: 15px;
+  width: 85%;
+}
+
 .testing {
   display: flex;
   justify-content: space-between;
@@ -9,6 +21,11 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
   &__back {
     position: absolute;
@@ -69,6 +86,22 @@
       background: linear-gradient(273.48deg, #EE5D5D -26.77%, #FE6356 97.74%);
       color: #fff;
       cursor: default;
+    }
+  }
+}
+
+@media (max-width: $lg) {
+  .container {
+    border-radius: 0;
+    height: 100%;
+    width: 100%;
+    padding-bottom: 15px;
+    padding: 30px 0 0 0;
+    width: 100%;
+  }
+  .testing {
+    &__body {
+      width: 95%;
     }
   }
 }

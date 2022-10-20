@@ -1,9 +1,8 @@
 .App {
-  text-align: center;
-  background-color: #fff;
-  border-radius: 50px;
-  min-height: 88vh; /* TODO: Временная мера */
-  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
 
 .App-logo {
@@ -38,5 +37,11 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 992px) {
+  .App {
+    height: 100%;
   }
 }
