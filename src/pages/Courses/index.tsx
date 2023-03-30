@@ -13,7 +13,6 @@ export const Courses = () => {
         <div className={classes['courses__my-courses'] + ' ' + classes['my-courses']}>
           <H1 text='Мои курсы' />
           <div className={classes['courses__courses-block']}>
-            {/* Как убрать отступы у этих компонентов */}
             <CourseBlock 
               title='Программирование на Python, создание игр и простых приложений' 
               subtitle='Урок 5: навание урока'

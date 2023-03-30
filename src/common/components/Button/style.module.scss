@@ -6,4 +6,11 @@
   background-color: #A68DCC;
   color: #fff;
   border-radius: 8px;
+  transition: .3s;
+  cursor: pointer;
+}
+
+.button:hover {
+  opacity: .8;
+  transform: scale(1.02);
 }

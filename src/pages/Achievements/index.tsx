@@ -6,58 +6,31 @@ import {Title as H2} from '../../common/components/H2'
 
 import diploma from '../../common/assets/img/diploma.png'
 
+import { AchievmentsCourse } from './components/AchievmentsCourse'
+
 export const Achievements = () => {
   return <div className={classes['container'] + ' ' + classes['achievements']}>
     <LeftBar />
 
     <div className={classes['achievements__body']}>
       <H1 text='Мои успехи:' />
-      <div className={classes['achievements__course']}>
-        <H2 text='Название курса' color='purple' />
-        <ul className={classes['achievements__list']}>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-        </ul>
-      </div>
-      <div className={classes['achievements__course']}>
-        <H2 text='Название курса' color='yellow' />
-        <ul className={classes['achievements__list']}>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-          <li className={classes['achievements__item']}>
-            <img src={diploma} alt="" />
-          </li>
-        </ul>
-      </div>
+
+      <AchievmentsCourse 
+        images={[
+          diploma,
+          diploma,
+        ]}
+        title='Название курса'
+        colorTitle='black'
+      />
+      <AchievmentsCourse 
+        images={[
+          diploma,
+          diploma,
+        ]}
+        title='Название курса'
+        colorTitle='black'
+      />
     </div>
   </div>
 }

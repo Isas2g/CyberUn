@@ -5,7 +5,7 @@ import classes from './style.module.scss'
 //   purple='purple'
 // }
 
-type Colors = 'black' | 'white' | 'yellow'
+type Colors = 'black' | 'white' | 'yellow' | 'purple'
 
 interface Props {
   text: string,
@@ -25,6 +25,14 @@ export const Title = ({text, styles, color}: Props) => {
   } else if (color === 'yellow') {
     const style = {
       color: '#FFB118',
+      ...styles
+    }
+    return <h4 style={style} className={classes['h4']}>
+      {text}
+    </h4>
+  } else if (color === 'purple') {
+    const style = {
+      color: '#D5B8DA',
       ...styles
     }
     return <h4 style={style} className={classes['h4']}>

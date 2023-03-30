@@ -1,0 +1,19 @@
+.achievements {
+  &__course {
+    margin: 30px 0 0 0;
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    list-style: none;
+    margin: 20px 0 0 0;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+  &__item:not(:first-of-type) {
+    margin: 0 0 0 10px;
+  }
+}

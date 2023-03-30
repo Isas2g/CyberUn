@@ -1,0 +1,68 @@
+@import "../../../../common/style/breakpoints.scss";
+
+.additional-materials {
+  margin: 30px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__video {
+    height: 100%;
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+    
+  }
+
+  &__body {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  &__image-block {
+    background: linear-gradient(80.75deg, #FFA800 -1.74%, #FFB118 92.47%);
+    padding: 20px 25px;
+    border-radius: 20px;
+  }
+  &__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-gap: 10px;
+    margin: 20px 0 0 0;
+  }
+  &__name {
+    font-weight: 400;
+    font-size: 10px;
+    color: #FFFFFF;
+    margin: 10px 0 0 0;
+  }
+  &__download {
+    margin: 10px 0 0 0;
+    font-weight: 600;
+    font-size: 10px;
+    text-decoration-line: underline;
+    color: #000000;
+  }
+}
+
+@media (max-width: $md) {
+  .additional-materials {
+    display: flex;
+    flex-direction: column;
+
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    &__body {
+      align-items: center;
+      margin: 20px 0 0 0;
+    }
+  }
+}

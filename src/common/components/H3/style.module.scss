@@ -1,6 +1,14 @@
+@import "../../style/breakpoints.scss";
+
 .h3 {
   font-weight: 700;
   font-size: 14px;
   color: #FFFFFF;
   text-align: start;
+}
+
+@media (max-width: $sm) {
+  .h3 {
+    font-size: 12px;
+  }
 }

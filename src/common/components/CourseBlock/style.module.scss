@@ -6,6 +6,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  transition: .3s;
 
   &__date {
     font-weight: 700;
@@ -20,4 +21,8 @@
   &__arrow {
     opacity: 1;
   }
+}
+
+.course:hover {
+  opacity: .8;
 }

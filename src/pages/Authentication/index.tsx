@@ -2,6 +2,7 @@ import { useState } from 'react';
 import logo from '../../common/assets/icons/logo.svg';
 import classes from './style.module.scss';
 import bcrypt from 'bcryptjs';
+import bg from '../../common/assets/img/login_bg.png';
 
 const salt = bcrypt.genSaltSync(10);
 
@@ -26,6 +27,7 @@ export const Authentication = () => {
 
   return <div className={classes['container']}>
     <img src={logo} alt="" className={classes["logo"]} />
+    <img src={bg} alt="" className={classes['back']} />
     
     <div className={classes['animation']}>
       <p>Тут анимация</p>
